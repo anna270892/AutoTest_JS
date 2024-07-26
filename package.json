@@ -1,0 +1,26 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./build/ -p=3001",
+    "test": "npx playwright test",
+    "testweb": "vitest ws-tests/",
+    "codegen": "npx playwright codegen http://0.0.0.1:3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.6.5",
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "npx": "^10.2.2",
+    "vite": "^5.2.10",
+    "vitest": "^1.5.2",
+    "ws": "^8.16.0"
+  }
+}
